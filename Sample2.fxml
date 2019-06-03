@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ParentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="791.0" prefWidth="1182.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller1">
+   <children>
+      <JFXScrollPane fx:id="Container" layoutX="2.0" layoutY="-1.0" prefHeight="682.0" prefWidth="1180.0">
+         <children>
+            <TableView fx:id="table" prefHeight="492.0" prefWidth="667.0">
+               <columns>
+                  <TableColumn fx:id="t1" prefWidth="431.0" text="Income from Salaries" />
+                  <TableColumn fx:id="t2" prefWidth="262.0" />
+                  <TableColumn fx:id="t3" minWidth="8.0" prefWidth="220.0" />
+                  <TableColumn fx:id="t4" prefWidth="266.0" />
+               </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+   </children>
+</AnchorPane>

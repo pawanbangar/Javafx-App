@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="ParentContainer" prefHeight="900.0" prefWidth="1737.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <MenuBar prefHeight="41.0" prefWidth="536.0" VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="New" />
+                        <MenuItem mnemonicParsing="false" text="Open…" />
+                        <Menu mnemonicParsing="false" text="Open Recent" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                        <MenuItem mnemonicParsing="false" text="Save" />
+                        <MenuItem mnemonicParsing="false" text="Save As…" />
+                        <MenuItem mnemonicParsing="false" text="Revert" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Preferences…" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Quit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo" />
+                        <MenuItem mnemonicParsing="false" text="Redo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Cut" />
+                        <MenuItem mnemonicParsing="false" text="Copy" />
+                        <MenuItem mnemonicParsing="false" text="Paste" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Select All" />
+                        <MenuItem mnemonicParsing="false" text="Unselect All" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane id="lname" fx:id="Anchorp" maxHeight="-1.0" maxWidth="-1.0" prefHeight="832.0" prefWidth="1064.0" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" layoutX="38.0" layoutY="58.0" prefHeight="36.0" prefWidth="70.0" style="-fx-font-size: 20;" stylesheets="@style.css" text="Name:" textAlignment="CENTER">
+                    <effect>
+                        <InnerShadow color="#00000005" />
+                    </effect>
+                </Label>
+                <JFXTextField focusColor="#2e3b65" labelFloat="true" layoutX="148.0" layoutY="59.0" prefHeight="26.0" prefWidth="267.0" promptText="Enter Name" style="-fx-text-fill: white;" stylesheets="@style.css" unFocusColor="#e4e0e0">
+                    <effect>
+                  <Glow />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                    </cursor>
+                </JFXTextField>
+                <Label alignment="CENTER" layoutX="8.0" layoutY="112.0" prefHeight="28.0" prefWidth="124.0" style="-fx-font-size: 20;" stylesheets="@style.css" text="Mobile No:" />
+                <JFXTextField labelFloat="true" layoutX="155.0" layoutY="113.0" prefHeight="26.0" prefWidth="275.0" promptText="Enter Mobile no" stylesheets="@style.css" />
+                <Label layoutX="16.0" layoutY="159.0" prefHeight="36.0" prefWidth="154.0" style="-fx-font-size: 18;" stylesheets="@style.css" text="Father's Name:" />
+                <JFXTextField labelFloat="true" layoutX="155.0" layoutY="159.0" prefHeight="26.0" prefWidth="294.0" promptText="Enter Father's Name" />
+                <Label layoutX="30.0" layoutY="223.0" prefHeight="29.0" prefWidth="102.0" style="-fx-font-size: 19;" stylesheets="@style.css" text="Address:" textAlignment="CENTER" />
+                <JFXTextArea labelFloat="true" layoutX="133.0" layoutY="215.0" prefHeight="97.0" prefWidth="338.0" promptText="Enter Address" style="-fx-border-width: 0.10; -fx-border-radius: 60;" stylesheets="@style.css" />
+                <Label layoutX="30.0" layoutY="335.0" prefHeight="29.0" prefWidth="102.0" style="-fx-font-size: 19;" stylesheets="@style.css" text="City/Place:" />
+                <JFXTextField layoutX="139.0" layoutY="337.0" prefHeight="26.0" prefWidth="327.0" promptText="Enter City/Text" />
+                <JFXTextField layoutX="153.0" layoutY="395.0" prefHeight="26.0" prefWidth="176.0" promptText="Enter Pin Code" />
+                <Label alignment="CENTER" layoutX="39.0" layoutY="394.0" prefHeight="28.0" prefWidth="108.0" style="-fx-font-size: 19; -fx-background-radius: 30;" stylesheets="@style.css" text="Pin Code:" />
+                <Label alignment="CENTER" layoutX="42.0" layoutY="440.0" prefHeight="26.0" prefWidth="57.0" style="-fx-font-size: 19;" text="DOB:" />
+                <Label alignment="CENTER" layoutX="30.0" layoutY="484.0" prefHeight="26.0" prefWidth="85.0" style="-fx-font-size: 19;" stylesheets="@style.css" text="PAN:" />
+                <JFXTextField layoutX="149.0" layoutY="485.0" promptText="Enter PAN" />
+                <Label layoutX="21.0" layoutY="527.0" style="-fx-font-size: 19;" stylesheets="@style.css" text="ward/CIrcle" />
+                <Label layoutX="14.0" layoutY="566.0" prefHeight="26.0" prefWidth="209.0" style="-fx-font-size: 18;" stylesheets="@style.css" text="Date Of Filling Return" />
+                <JFXTextField layoutX="151.0" layoutY="526.0" prefHeight="26.0" prefWidth="180.0" promptText="Enter Ward/Circle" />
+                <Label alignment="CENTER" layoutX="23.0" layoutY="614.0" prefHeight="24.0" prefWidth="103.0" style="-fx-font-size: 19;" stylesheets="@style.css" text="Due Date" />
+                <JFXTextField layoutX="165.0" layoutY="609.0" promptText="Enter Due Date" />
+                <Label layoutX="16.0" layoutY="662.0" prefHeight="26.0" prefWidth="190.0" style="-fx-font-size: 18;" stylesheets="@style.css" text="ResiDential Status" />
+                <ChoiceBox layoutX="214.0" layoutY="662.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-border-radius: 15;" stylesheets="@style.css" />
+                <ButtonBar layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="327.0" style="-fx-border-color: white; -fx-border-radius: 15;" stylesheets="@style.css">
+                    <buttons>
+                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="144.0" style="-fx-border-radius: 30; -fx-font-size: 15;" stylesheets="@style.css" text="Assessment Year:" />
+                        <ChoiceBox fx:id="Year" prefHeight="21.0" prefWidth="102.0" style="-fx-border-color: #169; -fx-border-radius: 15; -fx-background-radius: 15;" />
+                    </buttons>
+                </ButtonBar>
+                <ButtonBar layoutX="496.0" layoutY="333.0" prefHeight="40.0" prefWidth="244.0" />
+                <ButtonBar layoutX="724.0" layoutY="19.0" prefHeight="40.0" prefWidth="462.0" style="-fx-background-radius: 5; -fx-background-radius: 5; -fx-border-color: #169; -fx-border-radius: 15;" stylesheets="@style.css">
+                    <buttons>
+                        <JFXCheckBox minWidth="74.0" prefHeight="18.0" style="-fx-opacity: 1.50;" stylesheets="@style.css" text="Senior-60" />
+                        <JFXCheckBox prefHeight="18.0" prefWidth="122.0" style="-fx-font-size: 9;" stylesheets="@style.css" text="Very Senior-80" />
+                        <JFXRadioButton minWidth="78.0" prefHeight="18.0" text="Female">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="gender" />
+                            </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton minWidth="83.0" prefHeight="18.0" text="Male" toggleGroup="$gender" />
+                    </buttons>
+                </ButtonBar>
+                <Label layoutX="501.0" layoutY="77.0" prefHeight="25.0" prefWidth="221.0" style="-fx-font-size: 20; -fx-font-weight: bold;" stylesheets="@style.css" text="Heads Of Income" />
+                <Label layoutX="1036.0" layoutY="76.0" prefHeight="29.0" prefWidth="143.0" style="-fx-alignment: center; -fx-font-size: 15; -fx-font-weight: bold;" stylesheets="@style.css" text="No.Of Sources" />
+                <Label layoutX="529.0" layoutY="131.0" text="Income From Salary" textFill="#251f1f" />
+                <JFXCheckBox layoutX="828.0" layoutY="140.0" text="Number Of Employers" />
+                <JFXCheckBox layoutX="827.0" layoutY="204.0" prefHeight="25.0" prefWidth="162.0" text="Self Occupied Property" />
+                <Label layoutX="527.0" layoutY="185.0" text="Income From House Property" />
+                <JFXCheckBox layoutX="826.0" layoutY="235.0" text="Letout House Property" />
+                <Label layoutX="528.0" layoutY="269.0" text="Profits and gains Of Business" />
+                <JFXCheckBox layoutX="831.0" layoutY="301.0" text="Special Business-44AD/AE etc" />
+                <JFXCheckBox layoutX="831.0" layoutY="331.0" text="Business" />
+                <JFXCheckBox layoutX="832.0" layoutY="368.0" text="Profession" />
+                <JFXCheckBox layoutX="831.0" layoutY="454.0" text="Long Term Capital Gain" />
+                <Label layoutX="536.0" layoutY="415.0" text="Income From Capital gain" />
+                <JFXCheckBox layoutX="829.0" layoutY="489.0" text="Short Term Capital Gains" />
+                <JFXCheckBox layoutX="833.0" layoutY="542.0" text="Income From Other Sources" />
+                <ChoiceBox fx:id="c1" layoutX="1056.0" layoutY="138.0" prefHeight="28.0" prefWidth="85.0" style="-fx-border-color: #0f9d58; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" />
+                <ChoiceBox fx:id="c2" layoutX="1065.0" layoutY="235.0" prefHeight="28.0" prefWidth="85.0" style="-fx-border-color: #0f9d58; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" />
+                <ChoiceBox fx:id="c3" layoutX="1066.0" layoutY="327.0" prefHeight="28.0" prefWidth="85.0" style="-fx-border-color: #0f9d58; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" />
+                <ChoiceBox fx:id="c4" layoutX="1066.0" layoutY="360.0" prefHeight="28.0" prefWidth="85.0" style="-fx-border-color: #0f9d58; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" />
+                <ChoiceBox fx:id="c5" layoutX="1065.0" layoutY="456.0" prefHeight="28.0" prefWidth="85.0" style="-fx-border-color: #0f9d58; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" />
+                <ChoiceBox fx:id="c6" layoutX="1063.0" layoutY="490.0" prefHeight="28.0" prefWidth="85.0" style="-fx-border-color: #0f9d58; -fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" />
+                <JFXButton fx:id="next" buttonType="RAISED" layoutX="1027.0" layoutY="615.0" onAction="#buttonpressed" prefHeight="41.0" prefWidth="103.0" ripplerFill="#c2543a" style="-fx-background-radius: 15; -fx-background-color: #0f9d58; -fx-opacity: 50; -fx-text-fill: white;" stylesheets="@style.css" text="Next" textOverrun="LEADING_ELLIPSIS" />
+                <JFXDatePicker fx:id="date" editable="false" layoutX="132.0" layoutY="441.0" prefHeight="24.0" prefWidth="191.0" promptText="Enter Date">
+                    <effect>
+                        <Blend />
+                    </effect>
+                </JFXDatePicker>
+                <JFXDatePicker editable="false" layoutX="228.0" layoutY="566.0" prefHeight="24.0" prefWidth="191.0" promptText="Enter Date" />
+                <ButtonBar layoutX="353.0" layoutY="12.0" prefHeight="40.0" prefWidth="294.0" style="-fx-border-radius: 15; -fx-border-color: white;" stylesheets="@style.css">
+                    <buttons>
+                      <Label minWidth="66.0" prefHeight="29.0" style="-fx-font-size: 17;" text="Status:" />
+                        <ChoiceBox fx:id="stat" minWidth="65.0" prefHeight="30.0" prefWidth="167.0" style="-fx-border-radius: 15; -fx-border-color: #169; -fx-background-radius: 15;" />
+                    </buttons></ButtonBar>
+            <JFXColorPicker layoutX="527.0" layoutY="482.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="791.0" prefWidth="2800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller10E">
+    <children>
+        <JFXScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="682.0" prefWidth="3260.0">
+            <children>
+                <TableView fx:id="table" prefHeight="682.0" prefWidth="2895.0" style="-fx-font-weight: bold;">
+                    <columns>
+                        <TableColumn fx:id="asst_year" minWidth="8.0" prefWidth="375.0000305175781" text="Asst. Year" />
+                        <TableColumn fx:id="column_18_19" prefWidth="150.0" text="2018-19" />
+                  <TableColumn fx:id="column_17_18" prefWidth="150.0" text="2017-18" />
+                  <TableColumn fx:id="column_16_17" prefWidth="150.0" text="2016-17" />
+                  <TableColumn fx:id="column_15_16" prefWidth="150.0" text="2015-16" />
+                  <TableColumn fx:id="column_14_15" prefWidth="150.0" text="2014-15" />
+                  <TableColumn fx:id="column_13_14" prefWidth="150.0" text="2013-14" />
+                  <TableColumn fx:id="column_12_13" prefWidth="150.0" text="2012-13" />
+                  <TableColumn fx:id="column_11_12" prefWidth="150.0" text="2011-12" />
+                  <TableColumn fx:id="column_10_11" prefWidth="150.0" text="2010-11" />
+                  <TableColumn fx:id="column_09_10" prefWidth="150.0" text="2009-10" />
+                  <TableColumn fx:id="column_08_09" prefWidth="145.0" text="2008-09" />
+                  <TableColumn fx:id="column_07_08" prefWidth="183.0" text="2007-08" />
+                  <TableColumn fx:id="column_06_07" prefWidth="187.0" text="2006-07" />
+                  <TableColumn fx:id="column_05_06" prefWidth="155.0" text="2005-06" />
+                  <TableColumn fx:id="column_04_05" prefWidth="147.0" text="2004-05" />
+                  <TableColumn fx:id="column_03_04" prefWidth="146.0" text="2003-04" />
+                  <TableColumn fx:id="column_02_03" prefWidth="154.0" text="2002-03" />
+                  <TableColumn fx:id="column_01_02" minWidth="8.0" prefWidth="143.0" text="2001-02" />
+                  <TableColumn fx:id="column_00_01" minWidth="8.0" prefWidth="143.0" text="2000-01" />
+                    </columns>
+                </TableView>
+            </children>
+        </JFXScrollPane>
+    </children>
+</AnchorPane>
