@@ -1,5 +1,4 @@
 package sample;
-
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDatePicker;
 import javafx.animation.*;
@@ -16,7 +15,6 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
-
 import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
@@ -56,15 +54,15 @@ public class Controller implements Initializable {
     @FXML
     public void buttonpressed(ActionEvent ae)
     {
-     try {
+         try {
          Parent root1 = FXMLLoader.load(getClass().getResource("Sample2.fxml"));
          ParentContainer.getChildren().add(root1);
          ParentContainer.getChildren().remove(Anchorp);
-     }
-     catch(IOException ex)
-     {
+             }
+         catch(IOException ex)
+             {
          System.out.println(ex);
-     }
+             }
 
     }
 }
