@@ -1,5 +1,10 @@
 
 #9d {
+/*         background color shoud change to make a beutifule ui if you agree then uncomment the lines below */
+/*        
+       -fx-background-fill :black;
+       -fx-text-fill : green;
+*/
        -fx-background-fill :black;
        -fx-text-fill : black;
 }
